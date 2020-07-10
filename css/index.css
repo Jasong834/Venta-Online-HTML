@@ -1,0 +1,158 @@
+ul#navigator{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color:chocolate;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+.slider {
+  width: 60%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 25%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+#p-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+div.p-grid-in {
+  box-sizing: border-box;
+  margin: 5px; 
+  padding: 10px;
+  border: 1px solid #e8f0ff;
+  background: #f2f7ff;
+}
+img.p-img {
+  width: 100%;
+  height: auto;
+}
+div.p-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+div.p-price {
+  color: #f44242;
+}
+div.p-desc {
+  color: #888;
+  font-size: 0.9em;
+}
+button.p-add {
+  background: chocolate;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 5px 5px 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  #p-grid { grid-template-columns: 33% 33% 33%; }
+}
+@media only screen and (max-width: 600px) {
+  #p-grid { grid-template-columns: 50% 50%; }
+}
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/contactanos.css">
+    <title>Contactanos</title>
+    <ul id="navigator">
+      <li><a href="index.html">Inicio</a></li>
+      <div class="dropdown">
+          <button class="dropbtn">Categorías 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="procesadores.html">Procesadore</a>
+            <a href="#">Tarjetas Gráficas</a>
+            <a href="#">Memoria RAM</a>
+            <a href="#">Case</a>
+            <a href="#">Fuentes de alimentación</a>
+            <a href="#">Teclados</a>
+            <a href="#">Mouse</a>
+            <a href="#">Teclados</a>
+            <a href="#">Monitor</a>
+            <a href="#">Discos Duros</a>
+          </div>
+        </div> 
+      <li><a class="active" href="contactanos.html">Contáctenos</a></li>
+      <li style="float:right"><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+      <li style="float:right"><a href="register.html">Registrarse</a></li>
+      <li><a href="carrito.html">Carrito de Compras</a></li>
+  </ul>
+</head>
+<body>
+  <br>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="nms">Nombre</label>
+          <input type="text" id="nm" name="firstname">
+      
+          <label for="aps">Apellido</label>
+          <input type="text" id="ap" name="lastname">
+
+          <label for="correo">Correo</label>
+          <input type="text" id="cr" name="correo">
+      
+          <label for="country">Problema</label>
+          <select id="country" name="country">
+            <option value="error">Error</option>>
+            <option value="opinion">Opinion</option>
+            <option value="consulta">Consulta</option>
+            <option value="usa">Comentario</option>
+          </select>
+      
+          <label for="cm">Comentario</label>
+          <textarea id="cms" name="subject"style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit" style="background-color: chocolate;">
+      
+        </form>
+      </div>
+</body>
+</html>
